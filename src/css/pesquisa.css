@@ -1,0 +1,136 @@
+/* css da pagina de pesquisa */
+*{
+    font-family: Arial, Helvetica, 'sans-serif';
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+#apresentacao {
+    color: #0255fd;
+    width: 43%;
+}
+
+#apresentacao p{
+    color: #161616;
+}
+
+a{
+    color: rgb(43, 41, 41);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* tabela sobre os postos */
+.infos , th, td{
+    padding-top: 30px;
+    /* border: 1px solid red; */
+    font-size: 80%;
+}
+
+/* contem o titulo e os graficos */
+.flex-container-collumn{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    /* border: 1px solid orange; */
+
+    margin-top: 20px ;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    gap: 20px;
+    color:#0255fd ;
+}
+
+/* *****main****** */
+.flex-tabela-container{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    
+    column-width: 30%;
+    gap: 20px;
+}
+.tabela-content{
+    /* min-width: 395px; */
+    width: auto;
+    height: auto;
+    /* border: 1px solid green; */
+    
+}
+
+th, td {
+    padding: 8px 12px;
+    text-align: center;
+}
+
+@media(max-width:860px){
+    #apresentacao{
+        width: auto;
+    }
+}
+
+@media(max-width:700px) {
+    .tabela-content{
+        width: auto;
+        font-size: 70%;
+    }
+
+    th, td {
+    padding: 4px 8px;
+    
+    }
+
+    #apresentacao{
+        padding-left: 10px;
+    }
+
+}
+
+table {
+    width: auto;
+    height: auto;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: rgb(113, 113, 113);
+    border-radius: 10px;
+    overflow: hidden;
+   
+}
+table, th, td {
+    color: rgb(221, 221, 221);
+    border: 1px solid rgb(221, 221, 221);
+    
+}
+ td , th{
+    width: 20%;
+}
+
+th {
+    background-color: rgb(22, 22, 22);
+}
+
+/* ******fim main ******* */
+
+#voltar-topo{
+    margin: 10px;
+    text-align: center;
+    text-decoration: underline blue;
+}
+#voltar-topo a{
+    color: #0255fd;
+    font-size: 20px;
+    font-weight: 500;
+}
