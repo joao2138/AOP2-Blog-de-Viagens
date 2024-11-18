@@ -1,11 +1,4 @@
 /* css da pagina de pesquisa */
-*{
-    font-family: Arial, Helvetica, 'sans-serif';
-    margin: 0px;
-    padding: 0px;
-    text-decoration: none;
-}
-
 #apresentacao {
     color: #0255fd;
     width: 43%;
@@ -15,18 +8,9 @@
     color: #161616;
 }
 
-a{
-    color: rgb(43, 41, 41);
-}
-
-a:hover{
-    text-decoration: underline;
-}
-
 /* tabela sobre os postos */
 .infos , th, td{
     padding-top: 30px;
-    /* border: 1px solid red; */
     font-size: 80%;
 }
 
@@ -38,8 +22,6 @@ a:hover{
     align-items: center;
 
     flex-direction: column;
-    /* border: 1px solid orange; */
-
     margin-top: 20px ;
     margin-bottom: 10px;
     padding-left: 20px;
@@ -64,11 +46,8 @@ a:hover{
     gap: 20px;
 }
 .tabela-content{
-    /* min-width: 395px; */
     width: auto;
-    height: auto;
-    /* border: 1px solid green; */
-    
+    height: auto; 
 }
 
 th, td {
