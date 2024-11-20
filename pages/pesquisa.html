@@ -62,61 +62,65 @@
             </p>
         </div>
 
-        <div class="tabela-content infos">
-            <span>Tabela de informações sobre os postos</span>
-            <table> 
-                <tr>
-                    <th>Postos</th>
-                    <th>Bairro</th>
-                    <th>Rua</th>
-                    <th>Cidade</th>
-                    <th>Qtd Amostras</th>
-                </tr>
-                <tr>
-                    <td>Posto Arara azul</td>
-                    <td>Chácara Pareral</td>
-                    <td>Rodovia ES-10</td>
-                    <td>Serra</td>
-                    <td>10</td>
-                </tr>
-                <tr>
-                    <td>Posto Flora</td>
-                    <td>Camará</td>
-                    <td>Rodovia ES-10</td>
-                    <td>Serra</td>
-                    <td>10</td>
-                </tr>
-                <tr>
-                    <td>Posto Marcela</td>
-                    <td>Jardim Limoeiro</td>
-                    <td>Rodovia Norte-Sul</td>
-                    <td>Serra</td>
-                    <td>10</td>
-                </tr>
-                <tr>
-                    <td>Posto Marlim</td>
-                    <td>Manguinhos</td>
-                    <td>Rodovia ES-10</td>
-                    <td>Serra</td>
-                    <td>10</td>
-                </tr>
-                <tr>
-                    <td>Posto Trivela</td>
-                    <td>Camará</td>
-                    <td>Rodovia ES-10</td>
-                    <td>Serra</td>
-                    <td>10</td>
-                </tr>
-                <tr>
-                    <td>Posto YAHOO</td>
-                    <td>Manguinhos</td>
-                    <td>Rodovia ES-10</td>
-                    <td>Serra</td>
-                    <td>10</td>
-                </tr>
+        <div class="tabela-content infos" onClick="atualiza()">
+            <h2 id="caption">Clique para alterar exibição</h2>
+            <table id="tabela-dinamica"> 
+                <thead>
+                    <tr>
+                        <th>Postos</th>
+                        <th>Bairro</th>
+                        <th>Rua</th>
+                        <th>Cidade</th>
+                        <th>Qtd Amostras</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Posto Arara azul</td>
+                        <td>Chácara Pareral</td>
+                        <td>Rodovia ES-10</td>
+                        <td>Serra</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Posto Flora</td>
+                        <td>Camará</td>
+                        <td>Rodovia ES-10</td>
+                        <td>Serra</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Posto Marcela</td>
+                        <td>Jardim Limoeiro</td>
+                        <td>Rodovia Norte-Sul</td>
+                        <td>Serra</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Posto Marlim</td>
+                        <td>Manguinhos</td>
+                        <td>Rodovia ES-10</td>
+                        <td>Serra</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Posto Trivela</td>
+                        <td>Camará</td>
+                        <td>Rodovia ES-10</td>
+                        <td>Serra</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Posto YAHOO</td>
+                        <td>Manguinhos</td>
+                        <td>Rodovia ES-10</td>
+                        <td>Serra</td>
+                        <td>10</td>
+                    </tr>
+                </tbody>
             </table>
-        </div>
-    </div>
+        </div>  <!--fim tabela-content infos -->
+    </div> <!-- fim flex tabela-container -->
 
     
 
@@ -330,7 +334,7 @@
                         <td>6,19</td>
                         <td>4,09</td>
                         <td>5,99</td>
-                        <td>14/05</td>
+                        <td>14/05/24</td>
                     </tr>
                     <tr>
                         <td>5,89</td>
@@ -697,6 +701,10 @@
         </nav>
         
     </footer>
+
+    <script src="../src/js/tabelaDinamica.js">
+
+    </script>
 
 </body>
 </html>
