@@ -33,7 +33,6 @@
 
 h2.title{
    margin-left: 19px;
-    color: black;
 }
 
 /* destaques-content em destaque */
@@ -123,7 +122,9 @@ h2.title{
     gap: 20px;
 }
 
-
+.conteudo-adicional h2{
+    color: aliceblue;
+}
 
 .adicional-content {
     /* border: 1px solid red; */
