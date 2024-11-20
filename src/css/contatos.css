@@ -73,3 +73,8 @@ textarea{
     border-radius:7px ;
     outline: none;
 }
+
+#disabled{
+    background-color: rgb(154, 156, 156);
+    color: aliceblue;
+}
