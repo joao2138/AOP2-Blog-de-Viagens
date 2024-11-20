@@ -107,10 +107,10 @@ const menor_preco_bairro = [
 
 const media_geral = [
     {
-        "Média Gasolina Comum": "5,87",
-        "Média Gasolina Aditivada": "6,07",
-        "Média Etanol": "4,09",
-        "Média Diesel": "5,97",
+        "Média Gasolina Comum": "R$ 5,87",
+        "Média Gasolina Aditivada": "R$ 6,07",
+        "Média Etanol": "R$ 4,09",
+        "Média Diesel": "R$ 5,97",
         "Periodo ": "10/05 A 23/05"
         
     }
