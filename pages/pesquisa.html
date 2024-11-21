@@ -50,94 +50,94 @@
     </header>
     
 
-
-    <div class="flex-tabela-container">
-        <div id="apresentacao">
-            <h2 >Pesquisa Coleta de preços de combustíveis</h2>
-            <br>
-
-            <p>
-                Foram feitas 10 coletas de preços em 6 postos diferentes e de diferentes bairros. <br>
-                Monstrando a evolução do preço médio dos combustíveis e o menor preço por bairros.
-            </p>
+    <main>
+        <div class="flex-tabela-container">
+            <div id="apresentacao">
+                <h2 >Pesquisa Coleta de preços de combustíveis</h2>
+                <br>
+        
+                <p>
+                    Foram feitas 10 coletas de preços em 6 postos diferentes e de diferentes bairros. <br>
+                    Monstrando a evolução do preço médio dos combustíveis e o menor preço por bairros.
+                </p>
+            </div>
+        
+            <div class="tabela-content infos" onClick="atualiza()">
+                <h2 id="caption">Clique para alterar a exibição</h2>
+                <div>
+                    <table id="tabela-dinamica"> 
+                        <thead>
+                            <tr>
+                                <th>Postos</th>
+                                <th>Bairro</th>
+                                <th>Rua</th>
+                                <th>Cidade</th>
+                                <th>Qtd Amostras</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Posto Arara azul</td>
+                                <td>Chácara Pareral</td>
+                                <td>Rodovia ES-10</td>
+                                <td>Serra</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Posto Flora</td>
+                                <td>Camará</td>
+                                <td>Rodovia ES-10</td>
+                                <td>Serra</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Posto Marcela</td>
+                                <td>Jardim Limoeiro</td>
+                                <td>Rodovia Norte-Sul</td>
+                                <td>Serra</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Posto Marlim</td>
+                                <td>Manguinhos</td>
+                                <td>Rodovia ES-10</td>
+                                <td>Serra</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Posto Trivela</td>
+                                <td>Camará</td>
+                                <td>Rodovia ES-10</td>
+                                <td>Serra</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Posto YAHOO</td>
+                                <td>Manguinhos</td>
+                                <td>Rodovia ES-10</td>
+                                <td>Serra</td>
+                                <td>10</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="selecao">
+                    <div class="circle"><div class="selected"></div></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+            </div>  <!--fim tabela-content infos -->
+        </div> <!-- fim flex tabela-container -->
+        
+        
+        
+        <div class="flex-container-collumn">
+            <h1>Tabela de Preços de Combustíveis</h1>
         </div>
 
-        <div class="tabela-content infos" onClick="atualiza()">
-            <h2 id="caption">Clique para alterar exibição</h2>
-            <div>
-                <table id="tabela-dinamica"> 
-                    <thead>
-                        <tr>
-                            <th>Postos</th>
-                            <th>Bairro</th>
-                            <th>Rua</th>
-                            <th>Cidade</th>
-                            <th>Qtd Amostras</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Posto Arara azul</td>
-                            <td>Chácara Pareral</td>
-                            <td>Rodovia ES-10</td>
-                            <td>Serra</td>
-                            <td>10</td>
-                        </tr>
-                        <tr>
-                            <td>Posto Flora</td>
-                            <td>Camará</td>
-                            <td>Rodovia ES-10</td>
-                            <td>Serra</td>
-                            <td>10</td>
-                        </tr>
-                        <tr>
-                            <td>Posto Marcela</td>
-                            <td>Jardim Limoeiro</td>
-                            <td>Rodovia Norte-Sul</td>
-                            <td>Serra</td>
-                            <td>10</td>
-                        </tr>
-                        <tr>
-                            <td>Posto Marlim</td>
-                            <td>Manguinhos</td>
-                            <td>Rodovia ES-10</td>
-                            <td>Serra</td>
-                            <td>10</td>
-                        </tr>
-                        <tr>
-                            <td>Posto Trivela</td>
-                            <td>Camará</td>
-                            <td>Rodovia ES-10</td>
-                            <td>Serra</td>
-                            <td>10</td>
-                        </tr>
-                        <tr>
-                            <td>Posto YAHOO</td>
-                            <td>Manguinhos</td>
-                            <td>Rodovia ES-10</td>
-                            <td>Serra</td>
-                            <td>10</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div id="selecao">
-                <div class="circle"><div class="selected"></div></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-                <div class="circle"></div>
-            </div>
-        </div>  <!--fim tabela-content infos -->
-    </div> <!-- fim flex tabela-container -->
 
     
-
-    <div class="flex-container-collumn">
-        <h1>Tabela de Preços de Combustíveis</h1>
-    </div>
-
-
-    <main>
         <div class="flex-tabela-container">
             <!-- Tabela 1 -->
             <div class="tabela-content">
