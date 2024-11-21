@@ -3,21 +3,33 @@ function atualiza() {
     if(x == 0){
         atualizarTabela(menor_preco_bairro);
         document.getElementById("caption").innerHTML="Menor preço por Bairro";
+
+        //muda a posição dos circulos que estao abaixo da tabela
+        document.getElementById("selecao").innerHTML="<div class='circle'></div><div class='circle'><div class='selected'></div></div><div class='circle'></div><div class='circle'></div>";
         x++;
     }
+        
     else if( x == 1){
         atualizarTabela(media_geral);
         document.getElementById("caption").innerHTML="Média Geral dos Combustíveis";
+
+        document.getElementById("selecao").innerHTML='<div class="circle"></div><div class="circle"></div> <div class="circle"><div class="selected"></div></div><div class="circle"></div>';
         x++;
     }
+        
     else if( x == 2){
         atualizarTabela(media_por_posto);
         document.getElementById("caption").innerHTML="Média Combustíveis por Posto";
+
+        document.getElementById("selecao").innerHTML='<div class="circle"></div><div class="circle"></div></div><div class="circle"></div><div class="circle"><div class="selected"></div></div>';
         x++;
     }
+        
     else{
         atualizarTabela(info_postos);
         document.getElementById("caption").innerHTML="Informações sobre os postos";
+
+        document.getElementById("selecao").innerHTML='<div class="circle"><div class="selected"></div></div><div class="circle"></div><div class="circle"></div><div class="circle"></div>';
         x = 0;
     }
 }
