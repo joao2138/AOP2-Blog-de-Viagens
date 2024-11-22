@@ -175,7 +175,7 @@ const media_por_posto = [
 
 const info_postos = [
     {
-        "Postos": "Posto Arara azul",
+        "Postos": "Posto Arara Azul",
         "Bairro": "Chácara Pareral",
         "Rua": "Rodovia ES-10",
         "Cidade": "Serra",
