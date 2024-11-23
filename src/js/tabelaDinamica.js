@@ -25,6 +25,7 @@ function atualiza() {
         x++;
     }
         
+    //volta para o padrão    
     else{
         atualizarTabela(info_postos);
         document.getElementById("caption").innerHTML="Informações sobre os postos";
@@ -48,12 +49,12 @@ function atualizarTabela(array) {
     thead.innerHTML = "";
     tbody.innerHTML = "";
 
-    //adicionando uma linha e pegando as chaves do objeto para usar como cabeçalho
+    //adicionando a linha de cabeçalho e pegando as chaves do objeto/dicionario para usar como os nomes de cabeçalho
     const cabecalho = document.createElement("tr");
     const colunas = Object.keys(novaTabela[0]);
     
 
-    //percorrendo a lista com os cabeçalhos(chaves) e adicionando os cabeçalhos nas linhas
+    //percorrendo a lista com os cabeçalhos(chaves) e adicionando os cabeçalhos na linha
     for(let i=0;  i < colunas.length; i++ ) {
         const th = document.createElement("th");
         th.textContent = colunas[i];
@@ -62,11 +63,12 @@ function atualizarTabela(array) {
     thead.appendChild(cabecalho);
 
     
-    // loop para adicionar as linhas da tabela
+    // loop para adicionar as linhas da tabela, para cada objeto cria uma nova tr
+    //cada 'dado' retorna o indice da posição do objeto no array
     for(let dado in novaTabela) {
         const tr = document.createElement("tr"); 
         
-        //no loop interno, cada linha é preenchida com o elementos td e preenche seu valor
+        //no loop interno, cada linha tr, é preenchida com elementos td e seu valor
         for(let coluna of colunas) {
             // console.log(coluna);
             const td = document.createElement("td"); 
