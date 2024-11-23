@@ -8,7 +8,7 @@
     color: #161616;
 }
 
-/* tabela sobre os postos */
+/* tabela resumo/sobre os postos */
 .infos , th, td{
     padding-top: 30px;
     font-size: 90%;
@@ -33,6 +33,7 @@
     border: 2px solid #0255fd;
     border-radius: 50%;
 }
+
 /*circulo selecionado*/
 .selected{
     width: 9px;
@@ -68,7 +69,7 @@
     color:#0255fd ;
 }
 
-/* *****main****** */
+
 .flex-tabela-container{
     width: 100%;
     height: auto;
@@ -102,6 +103,8 @@ th, td {
     .tabela-content{
         width: auto;
         font-size: 80%;
+        margin-left: 5px;
+        margin-right: 5px;
     }
     
     .infos {
@@ -145,7 +148,6 @@ th {
     background-color: rgb(22, 22, 22);
 }
 
-/* ******fim main ******* */
 
 #voltar-topo{
     margin: 10px;
