@@ -81,7 +81,7 @@ function atualizarTabela(array) {
 }
 
 
-//são os valores de cada tabela, usei um conversor de Excel para Json para criar um array de objetos e usar eles para fazer as tabelas mais facilmente, usar innerHTML não deu muito certo
+//esses são os valores de cada tabela, usei uma estrutura de dicionario para usar as chaves como cabeçalho e usar as mesmas chaves para recuperar os valores, acho que no javascript sao chamados objetos. entao cada objeto no array funciona como um tr e dentro dele o td, funcionou melhor do que o esperado usar innerHTML não deu muito certo
 const menor_preco_bairro = [
     {
         "Bairros": "Camará",
