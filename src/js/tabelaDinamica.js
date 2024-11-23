@@ -64,11 +64,12 @@ function atualizarTabela(array) {
 
     
     // loop para adicionar as linhas da tabela, para cada objeto cria uma nova tr
-    //cada 'dado' retorna o indice da posição do objeto no array
+    //cada 'dado' retorna o indice da posição do objeto/dicionario no array
     for(let dado in novaTabela) {
         const tr = document.createElement("tr"); 
         
         //no loop interno, cada linha tr, é preenchida com elementos td e seu valor
+        //cada 'coluna' retorna a chave do objeto
         for(let coluna of colunas) {
             // console.log(coluna);
             const td = document.createElement("td"); 
