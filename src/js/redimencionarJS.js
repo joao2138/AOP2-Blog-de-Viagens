@@ -1,7 +1,9 @@
  // Funções para alterar o conteúdo para dipositivos mobile
 
  function verificarTamanhoFooter() {
+    var historia = document.getElementById('historias');
     var elemento = document.getElementById("pesquisa");
+  
     //caso não encontre o id retorne
     if(elemento == null) { return }
   
@@ -9,10 +11,12 @@
     if (window.matchMedia("(max-width: 405px)").matches) {
         // Se a largura for menor que 405px reduz o tamanho do texto
         elemento.innerHTML = "Pesquisa";
+        historia.innerHTML = "Histórias viajantes";
 
     } else {
         // se não volte ao padrão
         elemento.innerHTML = "Pesquisa Combustíveis";
+        historia.innerHTML = "Histórias de viajantes";
     }
 
 }
