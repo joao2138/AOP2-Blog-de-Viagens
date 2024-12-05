@@ -2,7 +2,9 @@
 
  function verificarTamanhoFooter() {
     var elemento = document.getElementById("pesquisa");
-    
+    //caso não encontre o id retorne
+    if(elemento == null) { return }
+  
     //matchMedia para simular uma media query
     if (window.matchMedia("(max-width: 405px)").matches) {
         // Se a largura for menor que 405px reduz o tamanho do texto
