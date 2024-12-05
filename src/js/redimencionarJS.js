@@ -4,19 +4,21 @@
     var historia = document.getElementById('historias');
     var elemento = document.getElementById("pesquisa");
   
-    //caso não encontre o id retorne
-    if(elemento == null) { return }
-  
     //matchMedia para simular uma media query
     if (window.matchMedia("(max-width: 405px)").matches) {
         // Se a largura for menor que 405px reduz o tamanho do texto
-        elemento.innerHTML = "Pesquisa";
         historia.innerHTML = "Histórias viajantes";
+     
+        //caso não encontre o id retorne
+        if(elemento == null) { return }
+        elemento.innerHTML = "Pesquisa";
 
     } else {
         // se não volte ao padrão
-        elemento.innerHTML = "Pesquisa Combustíveis";
         historia.innerHTML = "Histórias de viajantes";
+
+        if(elemento == null) { return }
+        elemento.innerHTML = "Pesquisa Combustíveis";
     }
 
 }
