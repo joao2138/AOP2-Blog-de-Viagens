@@ -23,6 +23,7 @@ function verificarTamanhoNavBar(){
     links = nav.getElementsByTagName("a");
 
     if(window.matchMedia("(max-width: 409px)").matches){
+     //links[1] e [3] são as tags <a> 'dicas de viagem' e 'historias de viajantes' respectivamente
         links[1].innerHTML = "Dicas viagem";
         links[3].innerHTML = "Histórias";
 
